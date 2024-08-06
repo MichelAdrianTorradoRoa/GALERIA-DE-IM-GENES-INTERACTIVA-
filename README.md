@@ -72,9 +72,7 @@ Asegúrate de tener los campos de entrada, el botón de añadir, el contenedor d
 
 6.3.JavaScript:
 
-Escribe el código en 'script.js' para manejar la inserción y eliminación de imágenes, la
-
-modificación de los detalles de las imágenes y la navegación entre imágenes.
+Escribe el código en 'script.js' para manejar la inserción y eliminación de imágenes, la modificación de los detalles de las imágenes y la navegación entre imágenes.
 
 Implementa las funciones para agregar nuevas imágenes, eliminar imágenes, mostrar detalles de imágenes y animar los cambios en la galería.
 
