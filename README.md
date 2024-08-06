@@ -1,4 +1,4 @@
-# GALERIA-DE-IM-GENES-INTERACTIVA-
+# GALERIA-DE-IMAGENES-INTERACTIVA-
 
 Título: Galería de Imágenes Interactiva
 
