@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galería de Imágenes Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Principal">
-        <input type="text" Titulo de la imagen>
-        <input type="text" URL de la imagen>
-        <button>Añadir imagen</button>
-    </div>
-    <div class="Mostrar imagenes en miniatura">
+    <!-- Contenedor principal de la galería -->
+    <div class="gallery-container">
+        <!-- Campo de entrada para la URL de la imagen -->
+        <input type="text" id="image-url" placeholder="URL de la imagen">
+        
+        <!-- Campo de entrada para el título de la imagen -->
+        <input type="text" id="image-title" placeholder="Título de la imagen">
+        
+        <!-- Botón para añadir una nueva imagen a la galería -->
+        <button id="add-image-btn">Añadir Imagen</button>
 
+        <!-- Selector para elegir la posición en la que se agregará la nueva imagen -->
+        <label for="insert-position">Posición:</label>
+        <select id="insert-position">
+            <option value="before">Antes de la imagen seleccionada</option>
+            <option value="after">Después de la imagen seleccionada</option>
+        </select>
+
+        <!-- Contenedor de la galería de imágenes -->
+        <div id="gallery" class="gallery">
+            <!-- Elemento de la galería con una imagen, título y botones para eliminar o ver detalles -->
+            <div class="gallery-item" data-id="1">
+                <img src="https://images.pexels.com/photos/2261165/pexels-photo-2261165.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Imagen 1">
+                <h3>Imagen 1</h3>
+                <button class="delete-btn">Eliminar</button>
+                <button class="details-btn">Ver detalles</button>
+            </div>
+            <!-- Otro elemento de la galería -->
+            <div class="gallery-item" data-id="2">
+                <img src="https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Imagen 2">
+                <h3>Imagen 2</h3>
+                <button class="delete-btn">Eliminar</button>
+                <button class="details-btn">Ver detalles</button>
+            </div>
+            <!-- Otro elemento de la galería -->
+            <div class="gallery-item" data-id="3">
+                <img src="https://images.pexels.com/photos/297494/pexels-photo-297494.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Imagen 3">
+                <h3>Imagen 3</h3>
+                <button class="delete-btn">Eliminar</button>
+                <button class="details-btn">Ver detalles</button>
+            </div>
+        </div>
     </div>
+
+    <!-- Modal para mostrar los detalles de la imagen seleccionada -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <!-- Botón para cerrar el modal -->
+            <span class="close-btn">&times;</span>
+            <!-- Imagen en el modal -->
+            <img id="modal-image" src="" alt="Imagen">
+            <!-- Título de la imagen en el modal -->
+            <h3 id="modal-title"></h3>
+        </div>
+    </div>
+
+    <!-- Inclusión del archivo JavaScript que contiene la lógica de la aplicación -->
+    <script src="script.js"></script>
 </body>
 </html>
